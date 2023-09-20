@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import debounce from 'lodash.debounce';
 
 import { Repository } from '../types/repository';
-import RepositoryItem from '../components/RepositoryItem';
-
 import { RootState, AppDispatch } from '../store/store';
 import { addFavorite, removeFavorite } from '../store/favoritesSlice';
 import { GithubRepositoryItem } from '../types/api';
 import { fetchGithubRepositories } from '../helpers/api';
+
+import SearchInput from '../components/SearchInput';
+import RepositoryList from '../components/RepositoryList';
+import { Container } from '@mui/material';
 
 const SearchPage = () => {
 	const [searchTerm, setSearchTerm] = useState('');
@@ -57,25 +59,18 @@ const SearchPage = () => {
 	};
 
 	return (
-		<div>
+		<Container maxWidth='sm'>
 			<h2>Search Repositories</h2>
-			<input
-				type='text'
-				value={searchTerm}
-				onChange={handleInputChange}
-				placeholder='Search repositories...'
+			<SearchInput
+				handleInputChange={handleInputChange}
+				searchTerm={searchTerm}
 			/>
-			<ul>
-				{results.map((repo) => (
-					<RepositoryItem
-						key={repo.id}
-						repository={repo}
-						onFavoriteClick={handleFavoriteClick}
-						isFavorited={getIsFavorited(repo)}
-					/>
-				))}
-			</ul>
-		</div>
+			<RepositoryList
+				repositories={results}
+				onFavoriteClick={handleFavoriteClick}
+				isFavorited={getIsFavorited}
+			/>
+		</Container>
 	);
 };
 

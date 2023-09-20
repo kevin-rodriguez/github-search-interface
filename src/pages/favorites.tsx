@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeFavorite, rateRepository } from '../store/favoritesSlice';
 import { AppDispatch, RootState } from '../store/store';
 import { Repository } from '../types/repository';
+import { Container } from '@mui/material';
 
 const FavoritesPage: React.FC = () => {
 	const dispatch: AppDispatch = useDispatch();
@@ -18,7 +19,7 @@ const FavoritesPage: React.FC = () => {
 	};
 
 	return (
-		<div>
+		<Container maxWidth='sm'>
 			<h2>Favorited Repositories</h2>
 			{favorites.length ? (
 				<ul>
@@ -48,7 +49,7 @@ const FavoritesPage: React.FC = () => {
 					the heart!
 				</p>
 			)}
-		</div>
+		</Container>
 	);
 };
 
