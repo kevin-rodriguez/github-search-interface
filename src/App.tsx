@@ -1,7 +1,17 @@
-import './App.css';
+import { Outlet } from 'react-router-dom';
 
-function App() {
-	return <div>Hello world</div>;
-}
+import Navbar from './layouts/Navbar';
+
+import GithubLogo from './assets/icons/GithubLogo';
+
+const App = () => {
+	return (
+		<div className='App'>
+			<GithubLogo />
+			<Outlet />
+			<Navbar />
+		</div>
+	);
+};
 
 export default App;
