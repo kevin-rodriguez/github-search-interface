@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { List, Paper } from '@mui/material';
 import { Repository } from '../types/repository';
 import RepositoryItem from './RepositoryItem';
+import useClickOutside from '../hooks/useClickOutside';
 
 interface RepositoryListProps {
 	repositories: Repository[];
@@ -18,19 +19,7 @@ const RepositoryList: React.FC<RepositoryListProps> = ({
 }) => {
 	const listRef = useRef<HTMLDivElement | null>(null);
 
-	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
-			if (listRef.current && !listRef.current.contains(event.target as Node)) {
-				onOutsideClick();
-			}
-		};
-
-		document.addEventListener('mousedown', handleClickOutside);
-
-		return () => {
-			document.removeEventListener('mousedown', handleClickOutside);
-		};
-	}, [onOutsideClick]);
+	useClickOutside(listRef, onOutsideClick);
 
 	if (!repositories.length) return null;
 
