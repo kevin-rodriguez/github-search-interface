@@ -16,21 +16,20 @@ _Note: All actions are made in memory, no persistency is implemented._
 ### Screenshots
 
 #### Mobile
-
-| ![Screenshot 2023-09-21 at 11 58 51](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/57271c58-3dba-481b-b37b-2c68526622df) | ![Screenshot 2023-09-21 at 11 58 44](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/6ff93327-4ae4-496d-924b-9fd3aacfe13d) | ![Screenshot 2023-09-21 at 11 58 33](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/aeb7ec54-851c-4153-8d64-b05437adce53) |
+| ![Screenshot 2023-09-21 at 11 58 51](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/0bbf46b4-a4c4-479b-9446-e533a3c202c2) | ![Screenshot 2023-09-21 at 11 58 44](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/134304d3-2fb7-4529-8a04-fc40f6f7236b) | ![Screenshot 2023-09-21 at 11 58 33](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/637742d7-2a1b-4f80-a7cb-4e080033538b) |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+
 
 #### Desktop
 
-| ![Screenshot 2023-09-21 at 11 57 33](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/aec27828-343c-428e-bd2f-66d18e6c5961) | ![Screenshot 2023-09-21 at 11 58 07](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/aa0d0a2e-46e0-4835-9162-c3e906b6b292) | ![Screenshot 2023-09-21 at 11 58 19](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/1331621e-3b89-4880-8866-a62e571694c0) |
+| ![Screenshot 2023-09-21 at 11 57 33](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/1cbb709e-a357-4565-a25a-511876b2075e) | ![Screenshot 2023-09-21 at 11 58 07](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/f3417ece-6cb4-405c-8da7-b7b7ee3cd6e1) | ![Screenshot 2023-09-21 at 11 58 19](https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/2a05b54c-21a6-4de2-a71f-f17f0b4a6c69) |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ### Demo
 
 #### Mobile
-
-https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/82951079-9bd6-4532-b31d-92896fdc004b
+https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/35a4e4be-5860-4cfc-801b-757b3e94d2ec
 
 #### Desktop
+https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/0f36c794-7728-40cd-81da-5f501c544b61
 
-https://github.com/kevin-rodriguez/github-search-interface/assets/30328809/0d7de8a2-23df-4415-a1c1-1b67d811ac84
