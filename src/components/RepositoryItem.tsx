@@ -1,17 +1,24 @@
-import React from 'react';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import { Repository } from '../types/repository';
-import { Divider, ListItemButton } from '@mui/material';
+import { Divider } from '@mui/material';
 
-const RepositoryItem: React.FC<{
+interface RepositoryItemProps {
 	repository: Repository;
 	isFavorited: boolean;
+	isLastItem: boolean;
 	onFavoriteClick: (repository: Repository) => void;
-}> = ({ repository, isFavorited, onFavoriteClick }) => {
+}
+
+const RepositoryItem: React.FC<RepositoryItemProps> = ({
+	repository,
+	isFavorited,
+	isLastItem,
+	onFavoriteClick,
+}) => {
 	const handleFavoriteClick = () => {
 		onFavoriteClick(repository);
 	};
@@ -19,9 +26,7 @@ const RepositoryItem: React.FC<{
 	return (
 		<>
 			<ListItem key={repository.id}>
-				<ListItemButton>
-					<ListItemText primary={repository.name} />
-				</ListItemButton>
+				<ListItemText primary={repository.name} />
 				<IconButton
 					onClick={handleFavoriteClick}
 					color={isFavorited ? 'error' : 'default'}
@@ -29,7 +34,7 @@ const RepositoryItem: React.FC<{
 					<FavoriteIcon />
 				</IconButton>
 			</ListItem>
-			<Divider variant='middle' light /> {/* Add a thin line */}
+			{!isLastItem && <Divider variant='middle' light />}
 		</>
 	);
 };

@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import App from './App.tsx';
 import FavoritesPage from './pages/favorites.tsx';
 import SearchPage from './pages/search.tsx';
+import HomePage from './pages/home.tsx';
 
 import store from './store/store.ts';
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
 		path: '/',
 		element: <App />,
 		children: [
+			{
+				index: true,
+				element: <HomePage />,
+			},
 			{
 				path: 'search',
 				element: <SearchPage />,

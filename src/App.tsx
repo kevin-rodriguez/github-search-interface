@@ -2,14 +2,13 @@ import { Outlet } from 'react-router-dom';
 
 import Navbar from './layouts/Navbar';
 
-import GithubLogo from './assets/icons/GithubLogo';
+import './App.css';
 
 const App = () => {
 	return (
 		<div className='App'>
-			<GithubLogo />
-			<Outlet />
 			<Navbar />
+			<Outlet />
 		</div>
 	);
 };

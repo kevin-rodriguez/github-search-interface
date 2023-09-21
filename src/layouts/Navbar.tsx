@@ -23,7 +23,12 @@ const Navbar = () => {
 			{isMobile ? (
 				<BottomNavigation
 					showLabels
-					style={{ position: 'fixed', bottom: 0, width: '100%' }}
+					style={{
+						position: 'fixed',
+						bottom: 0,
+						width: '100%',
+					}}
+					sx={{ zIndex: 1 }}
 					value={activeTab}
 				>
 					<BottomNavigationAction
@@ -43,14 +48,16 @@ const Navbar = () => {
 				</BottomNavigation>
 			) : (
 				<Drawer
-					variant='permanent'
-					anchor='left'
 					sx={{
+						width: 200,
+						flexShrink: 0,
 						'& .MuiDrawer-paper': {
 							width: 200,
 							boxSizing: 'border-box',
 						},
 					}}
+					variant='permanent'
+					anchor='left'
 				>
 					<List>
 						<ListItemButton
